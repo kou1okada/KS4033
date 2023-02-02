@@ -1,36 +1,44 @@
-# Micro-Bit-Motor-Driver
-A motor driver module designed for the BBC micro:bit. This module can drive 2 DC motors and 3 Servo motors.
+# Unofficial Micro:bit extension for Keyestudio Micro Bit DRV8833 Motor Driver Expansion Board KS4033
 
-Buy it from : https://shop.sb-components.co.uk/products/motor-driver-for-micro-bit
+A motor driver module designed for the BBC micro:bit.
+This module can drive 2 DC motors.
 
-![alt-text-1](images/product_img.png "motor driver") ![alt-text-2](images/product_with_microbit.png "with microbit")
+## Official pages of KS4033
 
-### Features
-* Micro:bit edge connector to connect Micro:Bit directly on module.
-* Onboard connectors to connect upto 2 DC motors and 3 servo motors
-* Vin 5-12 Volts input , output upto 3A
+* keyestudio / [Keyestudio Micro bit DRV8833 Motor Driver Expansion Board KS4033](https://www.keyestudio.com/products/keyestudio-micro-bit-drv8833-motor-driver-expansion-board)
+* keyestudio / wiki / [KS4033](https://wiki.keyestudio.com/KS4033_Keyestudio_Micro_bit_DRV8833_Motor_Driver_Expansion_Board_(Black_and_Eco-friendly))
 
-### Specification
-* Power input range: 5V~12V
-* Output voltage: 5V
-* Logic voltage: 3.3V
-* Driver: TB6612FNG
-* Dimension: 65mm x 41mm
-* Holes size: 2.0mm
+## Features
 
-### Pinouts and Connectors
+* Driveing Two DC motors.
+* Integrates 3.3V and 5V voltage regulator chips.
+* Serial communication interface for connecting BT modules and a DRV8833CPWP chip
+* Outputs the maximum 700mA currentIt
+* Four motor control modes: clockwise rotation/anticlockwise rotation/boot/stop.
+* PWM supports frequencies up to 100 kHz.
+* 3-pin interfaces which can be connected to other sensors.
+* The motor pin A1, A2, B2 and B1 of the expansion board are controlled by P13, P12, P15 and P16 of the micro:bit board.
+
+## Specification
+
+* VM input voltage: DC 5-10.8V
+  * Remarks: It directry outputs to morters.
+* Operating current of driving part: ≤700mA
+* Motor output configuration: double h-bridge
+* Working temperature: 0-50
+* Size: 70mm x 58mm
+* Driver: DRV8833
+
+## Pinouts and Connectors
 
 | PIN/CON | Description |
 | ------- | ----------- |
-| VIN | Power (5~12V) |
-| GND | Ground |
-| MA1 | Positive pole of motor A |
-| MA2 | Negative pole of motor A |
-| MB1 | Positive pole of motor B |
-| MB2 | Negative pole of motor B |
-| P0 | Control pin P0 of Servo 1 |
-| P1 | Control pin P1 of Servo 2 |
-| P2 | Control pin P2 of Servo 3 |
+| VM      | Power (5-10.8V) |
+| GND     | Ground |
+| A1      | Positive pole of motor A |
+| A2      | Negative pole of motor A |
+| B1      | Positive pole of motor B |
+| B2      | Negative pole of motor B |
 
 ## Programming Guide
 
@@ -59,3 +67,10 @@ Now you can use Motor driver extension feature to run/stop your motors.
       style="width:100%;">
       </a>
     </div>
+
+### Based Repository
+
+This project is based on following project:
+
+* Micro:bit extension for sbcshop Motor Driver for micro:bit
+  * https://github.com/sbcshop/Micro-Bit-Motor-Driver

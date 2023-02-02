@@ -1,7 +1,7 @@
 {
-    "name": "Micro:Bit Motor Driver",
+    "name": "keyestudio KS4033",
     "version": "0.1.2",
-    "description": "Servo and DC Motor Driver",
+    "description": "Keyestudio Micro Bit DRV8833 Motor Driver Expansion Board KS4033",
     "icon": "images/product_img.png",
     "license": "MIT",
     "dependencies": {
